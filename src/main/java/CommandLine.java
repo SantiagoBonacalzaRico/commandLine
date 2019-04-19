@@ -33,7 +33,7 @@ public class CommandLine {
     }
 
     private static void run(FileSystem fileSystem, String command, String suffix) {
-        OperationStrategy operationFactory = new OperationStrategy();
-        operationFactory.runOperation(command, suffix, fileSystem);
+        OperationStrategy operationStrategy = new OperationStrategy();
+        operationStrategy.runOperation(command, suffix, fileSystem);
     }
 }
