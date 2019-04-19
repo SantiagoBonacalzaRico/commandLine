@@ -1,0 +1,12 @@
+Service/Operation/Operation.class
+Service/Strategy/OperationStrategy.class
+Service/Operation/MkdirOperation.class
+CommandLine.class
+Service/Operation/LsOperation.class
+Service/Operation/PwdOperation.class
+Service/FileSystem.class
+Models/File.class
+Service/Operation/CdOperation.class
+Models/Element.class
+Service/Operation/TouchOperation.class
+Models/Directory.class
