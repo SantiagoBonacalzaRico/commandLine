@@ -17,6 +17,10 @@ public class PwdOperation implements Operation{
 
     @Override
     public void processOperation() {
+        getRecursiveTree();
+    }
+
+    public void getRecursiveTree() {
         Directory parentDirectory = fileSystem.getCurrentDirectory().getParentDirectory();
         List<String> result = new ArrayList<>();
         result.add(fileSystem.getCurrentDirectory().getName());

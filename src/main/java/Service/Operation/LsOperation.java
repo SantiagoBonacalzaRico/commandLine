@@ -32,6 +32,8 @@ public class LsOperation implements Operation {
             d.forEach(i -> {
                 results.add("/" + i.getName());
                 if (suffix.equals(RECURSIVE_SUFFIX)) {
+                    PwdOperation pwd = new PwdOperation(fileSystem);
+                    pwd.getRecursiveTree();
                     Optional<List<Directory>> recursiveDirectories = Optional.ofNullable(i.getDirectoryList());
                     recursiveDirectories.ifPresent(r -> {
                         r.forEach(di -> {
